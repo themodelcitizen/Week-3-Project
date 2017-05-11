@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+
+==============================================================================================================>
+
+  Engineered by:
+
+  April 
+  www.github.com/themodelcitizen            
+
+
+  Made in Houston, TX 
+
+<==============================================================================================================
+
+-->
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Lobster" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="trello.css">
+
+  <title>Trello(ish)</title>
+
+</head>
+
+<body>
+  <div id="diagonal"></div>
+  <div id="teamBoard">
+    <div id="header">
+      <div id="board">
+        <p><i class="fa fa-th-large" aria-hidden="true"></i> Boards</p>
+      </div>
+
+      <div id="search">
+        <p>
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" placeholder="Search ...">
+        </p>
+      </div>
+
+      <div id="brand">
+        <p><em>Trello</em></p>
+      </div>
+
+      <div id="menu">
+        <p><i class="fa fa-bars" aria-hidden="true"></i></p>
+      </div>
+
+      <div id="notification">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+      </div>
+
+      <div id="signIn">
+        <p><span>Hello, Anna</span>!</p>
+      </div>
+
+      <div id="profile">
+        <p><img src="http://bit.ly/2qu13hu"></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="heading">
+        <div id="star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+
+        <div id="teamMembers">
+          <p>Team members (<span id="memberCount">6</span>)</p>
+          <p>Netguru</p>
+        </div>
+
+        <div id="section">
+          <button id="allMembers">All Members</button>
+          <button id="myTeam">My Team</button>
+        </div>
+
+        <div id="icons">
+          <i class="fa fa-filter" aria-hidden="true"></i>
+          <i class="fa fa-th-large" aria-hidden="true"></i>
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div id="team">
+        <div class="teamMember addCard">
+          <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>  
+          <p>Add members to <br>the team</p>
+          <div>
+            <button id="addMember">+</button>
+          </div>            
+        </div> 
+
+
+        
+        <div id="jModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="trello.js" method="POST">
+              <div>
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" value="">
+              </div>
+              <div>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lasttName" id="lastName" placeholder="Last Name" value=""> 
+              </div>
+              <div>
+                <label for="userName">Username: </label>
+                <input type="text" name="username" id="userName" placeholder="Username" value="">
+              </div>            
+              <div>
+                <label for="numberOfTasks">Number of Tasks: </label>
+                <input type="number" name="numberOfTasks" id="numberOfTasks" value="">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="trello.js"></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+*{
+	margin: 0;
+}
+
+body, html{
+	height:100%;
+	width: 100%;
+	background: #F6F7FB;
+	overflow: hidden;
+}
+
+
+/*BACKGROUND DIAGONAL*/
+
+#diagonal {
+	background: #F6F7FB;
+	margin: 0 auto;
+}
+
+#diagonal:before {
+    content: '';
+    position: absolute;
+    left: 53%;
+    width: 100%;
+    height: 100%;
+    background-color: #3D77DB;
+    transform: skewX(315deg);
+}
+
+
+/*HEADER*/
+
+#header {
+	width: 100%;
+	height: 70px;
+	line-height: 30px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 0px #E0E0E0; 
+	border-radius: 10px 10px 0 0;
+}
+
+#header div {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 70px;
+}
+
+#board {
+	font-family: 'Lato', sans-serif;
+	margin-left: -10px
+}
+
+#board p {
+	margin-right: 60px;
+	color: #9EA6AC;
+}
+
+#board .fa-th-large {
+	margin-right: 4px;
+}
+
+
+#search {
+	color: #9DA4A9;
+}
+
+.fa-search{
+	margin-right: 2px;
+}
+
+input {
+	font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    color: #9DA4A9;
+    border: none;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+#brand {
+	float: left;
+	left: 50%;
+	position: relative;
+	line-height: 25px;
+}
+
+#brand p {
+	font-family: 'Lobster';    
+	font-size: 1.7em;
+	color: #4584F7;
+    margin-top: 2px;
+}
+
+#menu {
+	border-left: .5px solid #AEB6B9;
+}
+
+#menu, .fa-bell-o{
+	color: #AEB6B9;
+}
+
+#notification, #signIn, #menu {
+	float:right;
+	padding: 0 30px;
+}
+
+#profile {
+	float:right;
+}
+
+#signIn {
+	font-family: 'Lato', sans-serif;
+	color: #989FA5;
+	padding-left: 15px;
+}
+
+#signIn p {
+	display: inline;
+}
+
+#profile img {
+	width: 35px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+    zoom: 110%;
+}
+
+
+/*TEAMBOARD*/
+
+#teamBoard {
+	background: #F6F7FB;
+	position: absolute;
+	width: 90%;
+    height: 95%;
+    margin: 2% 4%;
+    border-radius: 10px;
+    z-index: 10;
+	box-shadow:-5px 10px 10px rgba(0,0,0,0.03), -10px 10px 10px rgba(0,0,0,0.01);
+}
+
+
+
+/*CONTAINER*/
+
+.container {
+	width: 90%;
+	height: 85%;
+	margin: 0 auto;
+}
+
+#heading {
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 30px;
+	padding: 22px 0;
+}
+
+#star {
+	background: #3D77DB;
+    display: inline;
+    float: left;
+    padding: 6px 12px 8px 12px;
+    border-radius: 5px;
+    margin: 0 20px 0 0;
+}
+
+.fa-star {
+	color: #FFFFFF !important;
+	font-size: 1em !important;
+}
+
+
+#teamMembers {
+	display: inline-block;
+	float: left;
+}
+
+
+#teamMembers p:first-child {
+    font-size: 1em;
+    margin-top: 2px;
+}
+
+
+#teamMembers p:last-child{
+	font-size: 10px;
+	color: #989FA5;
+}
+
+
+#section {
+	display: inline;
+	float: left;
+	left: 30%;
+    position: relative;
+}
+
+
+#section button {
+    font-size: .7em;
+    padding: 10px 20px;	
+    border: none;
+}
+
+
+#section button:first-child {
+	background: #FFFFFF;
+    margin-right: -1px;
+    border-radius: 4px 0 0 4px;
+}
+
+
+#section button:last-child {
+	background: #F6F7FB;
+	color: #989FA5;
+	border: .5px solid #9DA4A9;
+	margin-left: -2px;
+    padding: 10px 27px;
+	border-radius: 0 4px 4px 0;
+}
+
+
+#icons {
+	display: inline;
+	float: right;
+	font-size: 1em;
+    margin-top: 3px;
+    margin-right: -15px;
+}
+
+
+#icons i{
+	padding: 10px;
+}
+
+
+.fa-filter, .fa-th-large, .fa-tasks {
+	color: #9DA4A9;
+}
+
+
+#sort .fa-th-large {
+	background: #FFFFFF;
+	border-radius: 1.5px 0 0 1.5px;
+    margin-right: -3px;
+}
+
+
+.fa-sort-amount-desc {
+	margin-right: 18px;
+	background: #9DA4A9;
+	border-radius: 0 1.5px 1.5px 0;	
+	border: .5px solid #D3D3D3;
+}
+
+
+/*TEAM MEMBER CARDS*/
+
+#team{
+	font-family: 'Lato', sans-serif;
+}
+
+.teamMember {
+	background: #FFFFFF;
+    display: inline-block;
+    float: left;
+    margin: 0 6.4% 25px 0;
+    height: 275px;
+    width: 20%;
+    border-radius: 2px;
+    box-shadow: 2px 6px 10px #C9CACC;
+}
+
+.teamMember:nth-child(4n){
+	float: right;
+    margin: 0;
+}
+
+.profilePic {
+	text-align: center; 
+}
+
+.profilePic img {
+    width: 60px;
+    height: 55px;
+    margin-top: 12px;
+    border-radius: 50%;
+}
+
+.profileName {
+	margin-top: 8px;
+    text-align: center;
+}
+
+.editing {
+	text-align: center;	
+	border-bottom: .5px solid #DAE2E5;
+}
+
+.editing i{
+    margin: 10px 10%;
+	color: #DAE2E5; 
+ }
+
+
+.status div, .details div{
+ 	display: inline-block;
+ 	float: left;
+ 	width: 49.5%;
+ 	text-align: center;
+ }
+
+.status  {
+	padding-top: 20px;
+}
+
+.status .taskNumber{
+	width: 100%;
+}
+
+.taskNumber p:first-child {
+	font-size: 2em;
+}
+
+.taskNumber p:last-child {
+	font-size: .75em;
+	color: #DAE2E5; 
+}
+
+.details div {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: .5px solid #DAE2E5; 
+    font-size: .75em;
+    color: rgb(217, 217, 225);
+}
+
+
+.profileInfo {
+    border-left: .5px solid #DAE2E5; 
+}
+
+
+.currentlyOn {
+	color: #3D77DB !important;
+}
+
+.addCard {
+	background: #F6F7FB; 
+	text-align: center;
+	border: 1.2px dashed #D3D3D3;
+}
+
+.fa-user-plus {
+	background: #F6F7FB; 
+	color: #9DA4A9; 
+	margin-top: 60px;  
+	position: relative;
+	display: inline;
+	align-content: center; 
+}
+
+.fa-user-plus + p {
+	color: #9DA4A9; 
+	margin-top: 10px;
+	line-height: 20px;
+}
+
+.plusSign i{
+	padding-top: 5px;
+	height: 15px;
+	width: 20px;
+	text-align: center;
+}
+
+.fa-plus {
+	background: #9DA4A9; 
+	color: #F6F7FB; 
+	border-radius: 60%;
+	font-size: 1em;
+	margin-top: 120px;  
+	position: relative;
+	display: inline;
+	vertical-align: center;
+	left: 120px;
+}
+
+.addCard{
+	position: relative;
+}
+
+.addCard div {
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+
+}
+
+#addMember {
+	background: #3D77DB;
+    color: #FFFFFF;
+    font-size: 1em;
+    border: transparent;
+    border-radius: 60%;
+    height: 45px;
+    width: 45px;
+    right: 265px;
+}
+
+#jModal input{
+	color: #9DA4A9;
+	font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+    border: none;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.modal {
+	background-color: #000000; 
+	display: none;
+	position: fixed;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.modal-content {
+    background: #90C3D4;
+    color: #FFFFFF;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+	color: #AAAAAA;
+	font-size: 28px;
+	float: right; 
+}
+
+.close:hover, .close:focus {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
